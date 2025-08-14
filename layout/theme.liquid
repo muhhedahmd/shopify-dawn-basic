@@ -35,12 +35,16 @@
     {{ content_for_header }}
   </head>
 
+
   <body class="page-width-{{ settings.page_width }} card-hover-effect-{{ settings.card_hover_effect }}">
     {% render 'skip-to-content-link', href: '#MainContent', text: 'accessibility.skip_to_text' %}
     <div id="header-group">
       {% sections 'header-group' %}
     </div>
 
+    <div>
+      hello world Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae autem libero dolorem id laudantium architecto ea in nihil perferendis consectetur blanditiis error amet mollitia, quaerat sequi doloribus, nam delectus debitis.
+    </div>
     <script
       src="{{ 'critical.js' | asset_url }}"
       type="module"
@@ -56,11 +60,6 @@
       data-product-transition="{{ settings.transition_to_main_product }}"
       data-template="{{ template }}"
     >
-    <p style={{
-      color : "red"
-    }}>
-    hrllo 
-    </p>
       {{ content_for_layout }}
     </main>
 
